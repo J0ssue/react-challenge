@@ -1,0 +1,28 @@
+.app-container {
+  padding: 20px;
+  overflow-x: hidden;
+
+  &__shape {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: $primary;
+    width: 100%;
+    height: 500px;
+    transform: translateX(-50%);
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__shape {
+    border-bottom-right-radius: 247px;
+    border-bottom-left-radius: 247px;
+      transform: translateX(-15%);
+      width: 400px;
+    }
+  }
+}
